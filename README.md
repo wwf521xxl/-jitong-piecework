@@ -161,6 +161,18 @@ flowchart LR
 
 ---
 
+## 5. 界面预览
+
+| 新建订单 | 扫码报工 |
+| --- | --- |
+| ![新建订单](docs/screenshots/new-order.png) | ![扫码报工](docs/screenshots/scan.png) |
+
+![订单管理](docs/screenshots/admin-orders.png)
+
+> 截图中的姓名和订单信息为演示数据，已做脱敏处理。
+
+---
+
 ## 6. 我踩过的坑
 
 ### 坑一：只改前端，历史数据会乱
