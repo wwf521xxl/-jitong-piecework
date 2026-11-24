@@ -1,0 +1,46 @@
+__pycache__/
+*.pyc
+.vscode/edge-debug/
+docs/edge-debug/
+docs/dom.html
+docs/debug-*.js
+docs/capture*.js
+docs/test-*.js
+.DS_Store
+Thumbs.db
+*.log
+.cdp-profile/
+data/
+test_data/
+backups/
+.env
+certs/
+
+# 构建产物：可重新生成，不要上传
+build/
+dist/
+android-app/.gradle/
+android-app/build/
+android-app/local.properties
+*.apk
+*.exe
+*.zip
+
+# 本地/客户数据
+demo-data/
+*.db
+*.db-wal
+*.db-shm
+员工初始账号.csv
+管理员初始密码.txt
+
+# 现场资料（含内网 IP、二维码、客户信息）
+生产版使用说明.txt
+docs/客户现场交付清单.md
+docs/本地HTTPS扫码部署说明.md
+docs/生产版上线部署说明.md
+docs/手机扫码报工二维码.png
+docs/手机证书下载二维码.png
+docs/*.pdf
+docs/*.docx
+.vscode/

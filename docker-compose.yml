@@ -1,0 +1,36 @@
+services:
+  app:
+    build: .
+    restart: unless-stopped
+    environment:
+      JITONG_DATA_DIR: /data
+      JITONG_HOST: 0.0.0.0
+      JITONG_PORT: "8787"
+      JITONG_COOKIE_SECURE: "1"
+      # 公网部署禁止在登录页显示员工 PIN
+      JITONG_SHOW_ACCOUNTS: "0"
+      JITONG_ADMIN_PASSWORD: ${JITONG_ADMIN_PASSWORD:-}
+    volumes:
+      - ./data:/data
+    expose:
+      - "8787"
+
+  caddy:
+    image: caddy:2-alpine
+    restart: unless-stopped
+    depends_on:
+      - app
+    environment:
+      DOMAIN: ${DOMAIN}
+    ports:
+      - "80:80"
+      - "443:443"
+      - "443:443/udp"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+
+volumes:
+  caddy_data:
+  caddy_config:
