@@ -125,7 +125,7 @@ async function openInitialAccounts() {
   if (admin && admin.pin) {
     rows.push(`<button class="account" style="background:#eefaf4;border-color:#d3f0e1;color:var(--ink)" data-action="quick-login" data-account="admin" data-pin="${esc(admin.pin)}">
       <span class="avatar" style="background:#d9f5e7;color:#087a4b;border:0">李</span>
-      <span class="account-info"><span class="account-name" style="color:var(--ink)">李厂长 <span class="account-badge" style="background:#d9f5e7;color:#087a4b">管理员</span></span><span class="account-role" style="color:var(--muted)">admin · 密码 ${esc(admin.pin)}</span></span>
+      <span class="account-info"><span class="account-name" style="color:var(--ink)">厂长 <span class="account-badge" style="background:#d9f5e7;color:#087a4b">管理员</span></span><span class="account-role" style="color:var(--muted)">admin · 密码 ${esc(admin.pin)}</span></span>
       ${icon('arrow')}
     </button>`);
   }
@@ -266,7 +266,7 @@ function openAllAccounts() {
       </button>`).join('')}
       <button class="account" style="background:#eefaf4;border-color:#d3f0e1;color:var(--ink)" data-action="login" data-user="A001">
         <span class="avatar" style="background:#d9f5e7;color:#087a4b;border:0">李</span>
-        <span class="account-info"><span class="account-name" style="color:var(--ink)">李厂长 <span class="account-badge" style="background:#d9f5e7;color:#087a4b">管理端</span></span><span class="account-role" style="color:var(--muted)">厂长 · 管理员</span></span>${icon('arrow')}
+        <span class="account-info"><span class="account-name" style="color:var(--ink)">厂长 <span class="account-badge" style="background:#d9f5e7;color:#087a4b">管理端</span></span><span class="account-role" style="color:var(--muted)">厂长 · 管理员</span></span>${icon('arrow')}
       </button>
     </div>`);
 }
@@ -1328,7 +1328,7 @@ async function handleAction(action, el) {
         break;
       }
       r.status = 'valid';
-      r.approvedBy = '李厂长';
+      r.approvedBy = '厂长';
       r.approvedAt = new Date().toISOString();
       saveDB();
       toast('已确认计入产量', 'success');

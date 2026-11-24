@@ -44,3 +44,13 @@ docs/手机证书下载二维码.png
 docs/*.pdf
 docs/*.docx
 .vscode/
+
+# 公开展示前不放真实员工姓名和截图
+docs/preview-*.png
+tools/build_design_doc.py
+tools/build_customer_card.py
+
+# 公开展示前移除含真实姓名/现场 IP 的生成脚本
+tools/build_iphone_card.py
+tools/build_portable.py
+tools/migrate_skills_20261106.py

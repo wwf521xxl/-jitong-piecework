@@ -667,10 +667,10 @@ function adminStaffHTML() {
       <div class="panel-body">
         <div class="detail-list">
           <div><span>综合岗位</span><b>5 人 · 可跨两条线，报工时必须选择产线</b></div>
-          <div><span>激光裁切</span><b>4 人 · 黄伟、刘浩兼写真裁切</b></div>
-          <div><span>写真裁切</span><b style="color:var(--green)">2 人（黄伟、刘浩）· 已授权</b></div>
+          <div><span>激光裁切</span><b>4 人 · 员工17、员工06兼写真裁切</b></div>
+          <div><span>写真裁切</span><b style="color:var(--green)">2 人（员工17、员工06）· 已授权</b></div>
           <div><span>亚克力过胶</span><b>2 人（过膜过板兼）· 建议确认</b></div>
-          <div><span>全线多能工</span><b>2 人（王坚、张知亮）· 所有工序</b></div>
+          <div><span>全线多能工</span><b>2 人（员工05、员工07）· 所有工序</b></div>
           <div><span>权限原则</span><b>一人一账号，不共用；代报需管理员审批</b></div>
         </div>
       </div>

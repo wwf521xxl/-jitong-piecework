@@ -161,18 +161,6 @@ flowchart LR
 
 ---
 
-## 5. 页面预览
-
-| 员工首页 | 厂长概览 |
-| --- | --- |
-| ![员工首页](docs/preview-home.png) | ![厂长概览](docs/preview-admin.png) |
-
-| 新建订单 | 订单详情 |
-| --- | --- |
-| ![新建订单](docs/preview-new-order.png) | ![订单详情](docs/preview-detail.png) |
-
----
-
 ## 6. 我踩过的坑
 
 ### 坑一：只改前端，历史数据会乱

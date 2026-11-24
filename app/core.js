@@ -39,27 +39,27 @@ const ALL_STEPS = [1, 2, 3, 4, 5];
 let db;
 
 const EMPLOYEES = [
-  { id: 'E001', name: '肖尾珍', role: '综合岗位', avatar: '肖', skills: [{ line: '写真', steps: [5] }, { line: '亚克力', steps: [5] }] },
-  { id: 'E002', name: '余道京', role: '综合岗位', avatar: '余', skills: [{ line: '写真', steps: [5] }, { line: '亚克力', steps: [5] }] },
-  { id: 'E003', name: '陈根华', role: '综合岗位', avatar: '陈', skills: [{ line: '写真', steps: [5] }, { line: '亚克力', steps: [5] }] },
-  { id: 'E004', name: '王坤', role: '裁切（激光切割）', avatar: '王', skills: [{ line: '亚克力', steps: [4] }] },
-  { id: 'E005', name: '王坚', role: '多能工（全线）', avatar: '王', skills: [{ line: '写真', steps: [1, 2, 3, 4, 5] }, { line: '亚克力', steps: [1, 2, 3, 4, 5] }] },
-  { id: 'E006', name: '刘浩', role: '裁切（激光切割）', avatar: '刘', skills: [{ line: '写真', steps: [4] }, { line: '亚克力', steps: [4] }] },
-  { id: 'E007', name: '张知亮', role: '多能工（全线）', canCreateJob: true, avatar: '张', skills: [{ line: '写真', steps: [1, 2, 3, 4, 5] }, { line: '亚克力', steps: [1, 2, 3, 4, 5] }] },
-  { id: 'E008', name: '邓强', role: 'UV打印', avatar: '邓', skills: [{ line: '亚克力', steps: [2] }] },
-  { id: 'E009', name: '梁建华', role: '过膜过板', avatar: '梁', skills: [{ line: '写真', steps: [3] }, { line: '亚克力', steps: [3] }] },
-  { id: 'E010', name: '刘绍珍', role: '过膜过板', avatar: '刘', skills: [{ line: '写真', steps: [3] }, { line: '亚克力', steps: [3] }] },
-  { id: 'E011', name: '胡汝奇', role: '亚克力排图', canCreateJob: true, avatar: '胡', skills: [{ line: '亚克力', steps: [1] }] },
-  { id: 'E012', name: '喻宏伟', role: '亚克力排图', canCreateJob: true, avatar: '喻', skills: [{ line: '亚克力', steps: [1] }] },
-  { id: 'E013', name: '肖宏', role: '写真/异型（打印）', avatar: '肖', skills: [{ line: '写真', steps: [2] }] },
-  { id: 'E014', name: '周艳红', role: '综合岗位', avatar: '周', skills: [{ line: '写真', steps: [5] }, { line: '亚克力', steps: [5] }] },
-  { id: 'E015', name: '钟发兰', role: '综合岗位', avatar: '钟', skills: [{ line: '写真', steps: [5] }, { line: '亚克力', steps: [5] }] },
-  { id: 'E016', name: '朱宗耀', role: '写真/异型（排版）', canCreateJob: true, avatar: '朱', skills: [{ line: '写真', steps: [1] }] },
-  { id: 'E017', name: '黄伟', role: '裁切（激光切割）', avatar: '黄', skills: [{ line: '写真', steps: [4] }, { line: '亚克力', steps: [4] }] },
+  { id: 'E001', name: '员工01', role: '综合岗位', avatar: '员', skills: [{ line: '写真', steps: [5] }, { line: '亚克力', steps: [5] }] },
+  { id: 'E002', name: '员工02', role: '综合岗位', avatar: '员', skills: [{ line: '写真', steps: [5] }, { line: '亚克力', steps: [5] }] },
+  { id: 'E003', name: '员工03', role: '综合岗位', avatar: '员', skills: [{ line: '写真', steps: [5] }, { line: '亚克力', steps: [5] }] },
+  { id: 'E004', name: '员工04', role: '裁切（激光切割）', avatar: '员', skills: [{ line: '亚克力', steps: [4] }] },
+  { id: 'E005', name: '员工05', role: '多能工（全线）', avatar: '员', skills: [{ line: '写真', steps: [1, 2, 3, 4, 5] }, { line: '亚克力', steps: [1, 2, 3, 4, 5] }] },
+  { id: 'E006', name: '员工06', role: '裁切（激光切割）', avatar: '员', skills: [{ line: '写真', steps: [4] }, { line: '亚克力', steps: [4] }] },
+  { id: 'E007', name: '员工07', role: '多能工（全线）', canCreateJob: true, avatar: '员', skills: [{ line: '写真', steps: [1, 2, 3, 4, 5] }, { line: '亚克力', steps: [1, 2, 3, 4, 5] }] },
+  { id: 'E008', name: '员工08', role: 'UV打印', avatar: '员', skills: [{ line: '亚克力', steps: [2] }] },
+  { id: 'E009', name: '员工09', role: '过膜过板', avatar: '员', skills: [{ line: '写真', steps: [3] }, { line: '亚克力', steps: [3] }] },
+  { id: 'E010', name: '员工10', role: '过膜过板', avatar: '员', skills: [{ line: '写真', steps: [3] }, { line: '亚克力', steps: [3] }] },
+  { id: 'E011', name: '员工11', role: '亚克力排图', canCreateJob: true, avatar: '员', skills: [{ line: '亚克力', steps: [1] }] },
+  { id: 'E012', name: '员工12', role: '亚克力排图', canCreateJob: true, avatar: '员', skills: [{ line: '亚克力', steps: [1] }] },
+  { id: 'E013', name: '员工13', role: '写真/异型（打印）', avatar: '员', skills: [{ line: '写真', steps: [2] }] },
+  { id: 'E014', name: '员工14', role: '综合岗位', avatar: '员', skills: [{ line: '写真', steps: [5] }, { line: '亚克力', steps: [5] }] },
+  { id: 'E015', name: '员工15', role: '综合岗位', avatar: '员', skills: [{ line: '写真', steps: [5] }, { line: '亚克力', steps: [5] }] },
+  { id: 'E016', name: '员工16', role: '写真/异型（排版）', canCreateJob: true, avatar: '员', skills: [{ line: '写真', steps: [1] }] },
+  { id: 'E017', name: '员工17', role: '裁切（激光切割）', avatar: '员', skills: [{ line: '写真', steps: [4] }, { line: '亚克力', steps: [4] }] },
 ];
 
 const ADMIN = {
-  id: 'A001', name: '李厂长', role: '厂长 · 管理员', avatar: '李', isAdmin: true,
+  id: 'A001', name: '厂长', role: '厂长 · 管理员', avatar: '厂', isAdmin: true,
   skills: [{ line: '写真', steps: [1, 2, 3, 4, 5] }, { line: '亚克力', steps: [1, 2, 3, 4, 5] }],
 };
 const USERS = [...EMPLOYEES, ADMIN];

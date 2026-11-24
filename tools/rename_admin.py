@@ -66,7 +66,7 @@ def main() -> None:
         print(f"数据库：{db}")
         print(f"当前厂长姓名：{row['name']}")
         print()
-        new_name = input("请输入新的厂长姓名（例如 张厂长）：").strip()
+        new_name = input("请输入新的厂长姓名：").strip()
         if not new_name:
             print("没有输入姓名，已取消。")
             input("按回车退出...")

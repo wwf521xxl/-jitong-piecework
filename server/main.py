@@ -473,7 +473,7 @@ def initial_accounts(request: Request):
             if line.startswith("密码："):
                 password = line.split("：", 1)[1].strip()
                 break
-        admin = {"account": "admin", "name": "李厂长", "role": "厂长 · 管理员", "pin": password}
+        admin = {"account": "admin", "name": "厂长", "role": "厂长 · 管理员", "pin": password}
 
     return {"admin": admin, "employees": employees}
 
